@@ -1,10 +1,10 @@
-# 🔍 API Field Mapper with Sentence Transformers
+# API Field Mapper with Sentence Transformers
 
 This project uses **sentence embeddings** and **cosine similarity** to automatically detect semantically similar fields across different JSON APIs. It enables schema inference and consolidation from multiple sources — ideal for merging APIs with differing field names but similar meanings.
 
 ---
 
-## 🚀 Features
+## Features
 
 - Embeds API field names using `sentence-transformers`
 - Computes cosine similarity to infer equivalency
@@ -14,7 +14,7 @@ This project uses **sentence embeddings** and **cosine similarity** to automatic
 
 ---
 
-## 📦 Installation
+## Installation
 
 pip install sentence-transformers torch
 
@@ -24,7 +24,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 1. Loads a pre-trained embedding model (`all-MiniLM-L6-v2`)
 2. Encodes each API's keys as semantic vectors
@@ -33,7 +33,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 ---
 
-## 🧪 Example
+## Example
 
 ```python
 from sentence_transformers import SentenceTransformer, util
@@ -61,7 +61,7 @@ stock_price ≈ current_price (score: 0.634)
 open_time ≈ market_open (score: 0.565)
 ```
 
-## 📁 Future Additions
+## Future Additions
 Multi-way mapping (more than 2 APIs)
 
 Value-based similarity (e.g. using example values)
