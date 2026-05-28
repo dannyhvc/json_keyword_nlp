@@ -1,6 +1,6 @@
 # API Field Mapper with Sentence Transformers
 
-This project uses **sentence embeddings** and **cosine similarity** to automatically detect semantically similar fields across different JSON APIs. It enables schema inference and consolidation from multiple source, ideal for merging APIs with differing field names but similar meanings.
+This project uses **sentence embeddings** and **cosine similarity** to automatically detect semantically similar fields across different JSON APIs. It enables schema inference and consolidation from multiple sources, ideal for merging APIs with differing field names but similar meanings.
 
 ---
 
